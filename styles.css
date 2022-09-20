@@ -94,3 +94,43 @@ html, body {
     transform: translate(-50%, -50%); // translate(`X axis value`, `Y axis value`);   
 }
 
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+    height: 50%;
+    width: 50%;
+    top: 150%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); // translate(`X axis value`, `Y axis value`);
+    border: dashed 5px violet;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.item1 {
+    grid-area: header;
+    background-color: pink;
+}
+
+.item2 {
+    grid-area: menu;
+    background-color: red;
+}
+
+.item3 {
+    grid-area: main;
+    background-color: orange;
+}
+
+.item4 {
+    grid-area: footer;
+    background-color: lightblue;
+}
+
+
+
