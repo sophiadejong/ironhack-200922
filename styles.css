@@ -161,4 +161,28 @@ html, body {
     background-color: red;
 }
 
+.card {
+    height: 500px;
+    weight: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;  
+}
+
+.img {
+    width: 30px;
+    aspect-ratio: 1;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
 
