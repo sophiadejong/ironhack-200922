@@ -110,6 +110,7 @@ html, body {
     border: dashed 5px violet;
     padding: 10px;
     border-radius: 15px;
+    text-align: center;  
 }
 
 .item1 {
@@ -132,5 +133,32 @@ html, body {
     background-color: lightblue;
 }
 
+.flex {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+}
+
+.flex2 {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;   
+}
+
+.flex-container {
+    background-color: pink;
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.el1, .el2 {
+    width: 50px;
+    aspect-ratio: 2;
+    background-color: red;
+}
 
 
