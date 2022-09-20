@@ -3,7 +3,19 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+:root {
+    --main-bg-color: (blue);
+    --secondary-bg-color: (red);
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
   
   .container {
     width: 100%;
@@ -18,13 +30,21 @@ html, body {
     width: 80vmin;
     border: solid red 5px;
     box-sizing: border-box;
-  }
+    background-color: red;
+}
   
   .square:after {
     content: "";
     display: block;
     padding-bottom: 100%;
   }
+
+  .square:hover {
+    border: dotted 5px green;
+    border-radius: 30px;
+    animation-name: example;
+    animation-duration: 4s;
+}
   
   .content {
     position: absolute;
@@ -35,7 +55,7 @@ html, body {
 
 #outside {
     position: absolute;
-    background-color: turquoise;
+    background-color:var(--main-bg-color);
     width: 200px;
     height: 200px;
     border: dotted 10px rgba(0, 179, 255, 0.491);
@@ -48,9 +68,29 @@ html, body {
 #inside {
     position: relative;
     background-color: coral;
-    width: 100px;
-    height: 100px;
-    top: 25%;
-    left: 25%;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // translate(`X axis value`, `Y axis value`);   
   }
+
+  #inside:hover {
+    background-color: red;
+    border-radius: 50px;
+  }
+
+  #outside:hover {
+    background-color: black;
+  }
+
+
+
+.icono {
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // translate(`X axis value`, `Y axis value`);   
+}
 
